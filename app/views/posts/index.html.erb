@@ -1,0 +1,13 @@
+<h2>My Posts</h2>
+
+<div class="newPost"><%= link_to '新規投稿', new_post_path %></div>
+
+<ul>
+<% @posts.each do |post| %>
+<li><div class="listItem">
+    <div class="title"><%= link_to post.title, post_path(post) %></div>
+    <div class="body"><%= post.body %></div>
+    </div>
+</li>
+<% end %>
+</ul>
