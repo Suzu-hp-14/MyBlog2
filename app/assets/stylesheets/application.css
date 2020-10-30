@@ -65,6 +65,7 @@ ul li{
 	/*padding: 0.1em 0.3em;*/
 	transition: all .3s;
 	background-color:#e6e6fa;
+	letter-spacing: 0.2em;
 }
 .title:hover {
 	color: #fff;
