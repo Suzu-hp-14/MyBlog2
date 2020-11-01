@@ -64,12 +64,12 @@ ul li{
 	width:100%;
 	/*padding: 0.1em 0.3em;*/
 	transition: all .3s;
-	background-color:#e6e6fa;
+	background-color:#9eceff;
 	letter-spacing: 0.2em;
 }
 .title:hover {
 	color: #fff;
-	background-color: #00BCD4;
+	background-color: #7fbfff;
 }
 
 .body{
@@ -90,7 +90,7 @@ textarea{
     height:250px;
 }
 
-input[type="submit" i]{
+input[type="submit"]{
     width:300px;
 }
 
@@ -114,11 +114,12 @@ input[type="submit" i]{
 
 .itemfooter{
     text-align: right;
+    font-size:12px;
 }
 
 h4{
     margin:10px 0 0 0;
-    background-color:#b0c4de;
+    background-color:#9eceff;
     padding:5px;
 }
 
@@ -133,4 +134,8 @@ img.logo{
 
 p{
     margin:0;
+}
+
+a {
+text-decoration: none;
 }
