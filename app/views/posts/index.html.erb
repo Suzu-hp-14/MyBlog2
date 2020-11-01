@@ -7,6 +7,10 @@
 <li><div class="listItem">
     <div class="title"><%= link_to post.title, post_path(post) %></div>
     <div class="body"><%= post.body %></div>
+    <div class="itemfooter">
+        <%= link_to '[編集]', edit_post_path(post) %>
+        <%= link_to '[削除]', post_path(post), method: "DELETE" %>
+    </div>
     </div>
 </li>
 <% end %>
