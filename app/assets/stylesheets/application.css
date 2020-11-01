@@ -73,7 +73,7 @@ ul li{
 }
 
 .body{
-    padding:20px;
+    padding:5px;
     font-size:12px;
 }
 
@@ -106,4 +106,31 @@ input[type="submit" i]{
 
 .title a:hover{
     color:white;
+}
+
+.comment{
+    font-size:12px;
+}
+
+.itemfooter{
+    text-align: right;
+}
+
+h4{
+    margin:10px 0 0 0;
+    background-color:#b0c4de;
+    padding:5px;
+}
+
+.comment p{
+    margin:0;
+}
+
+img.logo{
+    width:20%;
+    height:20%;
+}
+
+p{
+    margin:0;
 }

@@ -1,2 +1,26 @@
 <h2><%= @post.title %></h2>
-<p><%= @post.body %></p>
+<p><%= simple_format(@post.body) %></p>
+<h4>コメント</h4>
+<div class= "comment">
+<ul>
+<% if @post.comments.any? %>
+    <li>
+        <% @post.comments.each do |comment| %>
+            <p>
+                <%= comment.body %>
+                <%= link_to '[削除]',
+                post_comment_path(@post,comment),
+                method: :delete,
+                data: { confirm: '削除してよろしいですか？'}
+                %>
+            </p>
+        <% end %>
+    </li>
+<% end %>
+</ul>
+</div>
+
+<%= form_for [@post, @post.comments.build] do |f| %>
+<%= f.text_field :body %>
+<%= f.submit %>
+<% end %>
